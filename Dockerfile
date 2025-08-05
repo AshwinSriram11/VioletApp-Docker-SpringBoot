@@ -2,7 +2,7 @@ FROM openjdk:17-jdk-slim
 
 WORKDIR /app
 
-COPY target/violetApple-docker.jar app.jar
+COPY target/voiletApple-docker-0.0.1-SNAPSHOT.jar app.jar
 
 EXPOSE 8080
 
