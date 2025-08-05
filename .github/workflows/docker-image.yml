@@ -24,10 +24,10 @@ jobs:
         run: mvn clean package -DskipTests
 
       - name: Log in to Docker Hub using CLI
-        run: docker login -u sharmarakesh -p ${{ secrets.DOCKER_HUB_TOKEN }}
+        run: docker login -u ashwinsriram11 -p ${{ secrets.DOCKER_HUB_TOKEN }}
 
       - name: Build Docker Image
-        run: docker build -t sharmarakesh/violetapple-springboot-project:latest .
+        run: docker build -t ashwinsriram11/violetapple-springboot-project:latest .
 
       - name: Push Docker Image to Docker Hub
-        run: docker push sharmarakesh/violetapple-springboot-project:latest
+        run: docker push ashwinsriram11/violetapple-springboot-project:latest
